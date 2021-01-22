@@ -42,10 +42,11 @@ console.log(amount)
 //# function definition 
 function hotelCost (totalDay) {
 
-    var totalAmount = 0 ;
+    var totalCost = 0 ;
     
     if (totalDay <= 10){
         hotelCost = totalDay * 100;
+         return hotelCost
     }
 
     else if (totalDay <= 20){
@@ -54,20 +55,20 @@ function hotelCost (totalDay) {
         var secondRound = month * 80;
 
         totalDay = firstRound + secondRound ;
+        return totalDay
     }
     else {
         var firstRound = 10 * 100;
         var secondRound = 10 * 80;
         var month = totalDay - 20 ;
         var  thirdRound = month * 50;
-        totalAmount = firstRound + secondRound + thirdRound
+        totalCost = firstRound + secondRound + thirdRound
     }
-
-        return totalAmount;
+        return totalCost;
 }
 
 //# function call 
-    var result =  hotelCost (30);
+    var result =  hotelCost (40);
     console.log(result)
 
 
