@@ -1,15 +1,19 @@
                 // //  This is the solution to the 1st problem.
 
-
-//# function definition            
+//# function definition
 function kilometerToMeter (kilometer){
-    var meter = kilometer * 1000;
-    return meter;
-}
-//# function call 
-var result = kilometerToMeter (95);
-console.log(result);
 
+    if ( kilometer < 0 ){
+        return  "Distance cannot be negative."
+    }
+    else{
+      return kilometer * 1000
+        }
+    }
+    //# function call 
+    var result = kilometerToMeter (95);
+     console.log(result);
+    
 
                     //  This is the solution to the 2nd problem.
 
